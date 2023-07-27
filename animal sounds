@@ -1,0 +1,24 @@
+class Animal:
+    def cat(self):
+        print("meaw")
+    def dog(self):
+        print("bark")
+
+class animal(Animal):
+    def cat(self):
+        super().meaw()
+        print("overide eat")
+    def dog(self):
+        super().bark()
+        print("override sleep")
+    def ani(self):
+        print("make sounds")
+
+if __name__ == "__main__":
+    a = cat()
+    b = dog()
+    a.meaw()
+    a.bark()
+    b.meaw()
+    b.bark()
+    b.ani()
